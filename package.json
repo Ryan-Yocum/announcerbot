@@ -1,0 +1,24 @@
+{
+  "name": "announcerbot",
+  "version": "1.0.0",
+  "description": "This bot will play something everytime a user joins a voice channel.\r The bot needs to be written from scratch as it has a different use case than the other bots.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryan-Yocum/announcerbot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ryan-Yocum/announcerbot/issues"
+  },
+  "homepage": "https://github.com/Ryan-Yocum/announcerbot#readme",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.3",
+    "discord.js": "^12.5.1"
+  }
+}
