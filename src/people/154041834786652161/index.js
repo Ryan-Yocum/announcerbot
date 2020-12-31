@@ -3,7 +3,6 @@ const fsp = require('fs').promises;
 const path = require('path');
 
 module.exports.run = async (dc, oldState, newState) => {
-  console.log('Hello World');
   const conn = await newState.channel.join();
   let dir = path.join(__dirname, 'clips');
   let files = await fsp.readdir(dir);
