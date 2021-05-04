@@ -27,9 +27,9 @@ dc.on('voiceStateUpdate', async (oldState, newState) => {
     let files = await fsp.readdir(dir);
     let file = files[Math.floor(Math.random() * files.length)]
     let disp = conn.play(fs.createReadStream(path.join(dir, file)), { volume: 0.5 });
-    disp.on('end', () => {
-		conn.disconnect();
-	});
+    disp.on('finish', () => {
+      conn.disconnect();
+    })
   }
 });
 
